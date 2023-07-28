@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Dancing+Script&family=Poppins:wght@100&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Advent Pro", "Poppins", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 60px;
+  margin: 0;
+  letter-spacing: 2px;
+  font-size: calc(1rem + 1.5vw);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ***************************NAVBAR******************************** */
+nav {
+  overflow: hidden;
+  background-color: #fffae1;
+  width: 100%;
+  opacity: 0.9;
+  position: fixed;
+}
+
+#menuBurger {
+  display: none;
+  cursor: pointer;
+  font-size: calc(0.5rem + 1.1vw);
+}
+
+#menuBurger:hover {
+  transform: scale(1.5);
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+#navBar {
+  margin: 0 15px 0 0;
+}
+nav li {
+  float: right;
+  /* font-size: calc(0.5rem + 1.1vw); */
+}
+
+nav li a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 18px 16px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: calc(0.5rem + 1.1vw);
+}
+
+nav li a:hover,
+#logo:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+  text-shadow: 5px 5px 2px black;
+  font-weight: bold;
+}
+
+#logo {
+  font-family: "Dancing Script", cursive;
+  font-size: calc(0.5rem + 0.6vw);
+  font-weight: bold;
+  float: left;
+  margin-left: 20px;
+}
+
+/* ***********************Image Principale********************** */
+#imagePrincipale {
+  padding-top: 60px;
+  background: url(medias/legums.jpg) no-repeat fixed 50% 50%;
+  /* background-size: cover; ceci nous permet davoir une image qui couvre la totalite de notre page. penser a le mettre a chaque fois. */
+  background-size: cover;
+  height: 799px;
+}
+h1 {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: calc(1.5rem + 5.5vw);
+  margin-top: 100px;
+  color: rgb(255, 206, 143);
+  text-shadow: 5px 5px 3px black;
+}
+
+#premierTrait {
+  height: 1px;
+  width: 25%;
+  margin: -3px auto;
+  background-color: #fffae1;
+  box-shadow: 1px 3px 2px black;
+}
+
+h3 {
+  text-align: center;
+  color: antiquewhite;
+  font-size: calc(1rem + 2.5vw);
+  text-shadow: 3px 3px 3px black;
+  letter-spacing: 2px;
+}
+
+/* ********************Presentation***************************** */
+#presenation {
+  background-color: #fffae1;
+  padding: 10px 0 100px 0;
+}
+
+#textIntro {
+  padding: 0 20px;
+  letter-spacing: 2px;
+}
+
+#prestation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 100px 10%;
+}
+
+.imagesPrestation h4 {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: calc(0.5rem + 1.1vw);
+  margin: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.imagesPrestation img {
+  border-radius: 10px;
+}
+.imagesPrestation img:hover {
+  opacity: 0.5;
+  transform: scale(1.05);
+  transition: all 1s ease;
+  box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* ********************Tourisme*********************** */
+#tourisme {
+  height: 1800px;
+  background-color: #f1f2f6;
+  padding: 1px 2%;
+}
+
+#tourisme h2 {
+  padding-top: 60px;
+}
+
+#concert {
+  background: url(medias/concert.jpg) 50% 50%;
+}
+#spectacle {
+  background: url(medias/spectacle.jpg) 50% 50%;
+}
+#bal {
+  background: url(medias/afro.jpg) 50% 50%;
+}
+#soiree {
+  background: url(medias/soiree.jpg) 50% 50%;
+}
+
+#tourisme li {
+  margin: 65px 100px 0 100px;
+  height: 333px;
+  width: 55%;
+  max-width: 500px;
+  float: left;
+  box-shadow: 6px 6px 28px -1px rgba(0, 0, 0, 0.75);
+}
+
+#tourisme p {
+  height: 45px;
+  width: 245px;
+  background-color: rgba(216, 167, 103, 0.5);
+  float: right;
+  margin: 50px -150px 0 0;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 15px;
+  box-shadow: 4px 4px 0 1px rgba(255, 206, 143, 0.7);
+  border-radius: 5px;
+}
+
+#tourisme #concert,
+#tourisme #bal {
+  float: right;
+}
+#concert p,
+#bal p {
+  float: left;
+  margin-left: -150px;
+  background-color: rgba(255, 224, 85, 0.5);
+  box-shadow: -4px 4px 0 1px rgba(255, 227, 103, 0.7);
+}
+
+/* *****************************Footer************************************* */
+footer {
+  background-color: #524a3a;
+  color: #fffae1;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+input,
+textarea,
+button {
+  bottom: none;
+  width: 55%;
+  padding: 15px 10px;
+  margin: 1px 0;
+  font-size: calc(0.5rem + 1.1vw);
+  font-weight: bold;
+  font-family: "Advent Pro", "Poppins", sans-serif;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  font-size: calc(0.5rem + 1.1vw);
+  background-color: #fdefa5;
+}
+button:hover {
+  background-color: #967d00;
+  color: #fffae1;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+}
+
+#deuxiemeTrait {
+  height: 1px;
+  width: 75%;
+  background-color: #fffae1;
+  margin: 60px auto;
+}
+
+#copyRightIcons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 10%;
+}
+
+#copyRight {
+  width: 50%;
+  text-align: left;
+  color: #fffae1;
+  font-size: calc(0.5rem + 1.1vw);
+  letter-spacing: 1px;
+}
+
+#icons {
+  width: 50%;
+  text-align: right;
+}
+
+#icons a {
+  display: inline-block;
+  padding: 0 10px;
+  color: #fffae1;
+  font-size: calc(0.5rem + 1.1vw);
+}
+#icons a:hover {
+  transform: scale(1.5);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ****************************Responsive*********************** */
+@media screen and (max-width: 800px) {
+  #prestation .imagesPrestation {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #tourisme ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #tourisme p {
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #menuBurger {
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 20px;
+    font-size: calc(1.2rem + 1vw);
+  }
+  #menuBurger::before {
+    content: "\2630";
+  }
+
+  .active #menuBurger::before {
+    content: "\2715";
+  }
+
+  #logo {
+    margin-left: 15px;
+  }
+
+  #navBar {
+    position: fixed;
+    margin-left: -100%;
+    background: rgb(27, 26, 26);
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    /* backdrop-filter: blur(2px); */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 1s ease;
+    font-weight: bold;
+  }
+
+  nav li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: calc(2rem + 2vw);
+    color: white;
+  }
+
+  #navBar.active {
+    margin-left: 0;
+  }
+
+  #copyRightIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  #copyRight {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  #icons {
+    text-align: center;
+    width: 100%;
+  }
+}
