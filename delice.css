@@ -149,6 +149,9 @@ nav li a:hover,
 }
 
 /* **********************slider************************************ */
+main {
+  background-color: #3b3424;
+}
 .main_menu {
   margin: 10px;
   padding: 10px;
@@ -180,6 +183,7 @@ div.active {
 
 .btn_nv,
 .btn_nv {
+  color: #fffae1;
   font-size: calc(0.5rem + 1.1vw);
   position: absolute;
   top: 50%;
@@ -197,6 +201,13 @@ div.active {
 }
 .left {
   left: 5%;
+}
+
+/* ***********************footer************************** */
+footer {
+  background-color: #524a3a;
+  margin: 10px;
+  padding: 10px;
 }
 
 #deuxiemeTrait {
@@ -237,7 +248,9 @@ div.active {
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 500px) {
+/* ****************responsive**************************** */
+
+@media screen and (max-width: 600px) {
   .right {
     right: 2%;
   }
