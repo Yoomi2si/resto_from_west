@@ -91,7 +91,7 @@ nav li a:hover,
 /* ***********************Image Principale********************** */
 #imagePrincipale {
   padding-top: 60px;
-  background: url(medias/legums.jpg) no-repeat fixed 50% 50%;
+  background: url(medias/min.jpg) no-repeat fixed 50% 50%;
   /* background-size: cover; ceci nous permet davoir une image qui couvre la totalite de notre page. penser a le mettre a chaque fois. */
   background-size: cover;
   height: 799px;
@@ -327,9 +327,9 @@ button:hover {
     content: "\2630";
   }
 
-  .active #menuBurger::before {
+  /* .active #menuBurger::before {
     content: "\2715";
-  }
+  } */
 
   #logo {
     margin-left: 15px;
