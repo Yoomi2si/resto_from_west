@@ -164,6 +164,10 @@ main {
   width: 55%;
   margin: auto;
 }
+.slider p {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 .slider div {
   max-width: 100%;
   display: none;
@@ -183,6 +187,7 @@ div.active {
 
 .btn_nv,
 .btn_nv {
+  font-family: "Dancing Script", cursive;
   color: #fffae1;
   font-size: calc(0.5rem + 1.1vw);
   position: absolute;
@@ -308,6 +313,10 @@ footer {
 
   #navBar.active {
     margin-left: 0;
+  }
+
+  #imagePrincipale h1 {
+    margin-top: 135px;
   }
 
   #copyRightIcons {

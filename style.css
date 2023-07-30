@@ -368,6 +368,10 @@ button:hover {
     margin-left: 0;
   }
 
+  #imagePrincipale h3 {
+    line-height: 55px;
+  }
+
   #copyRightIcons {
     display: flex;
     flex-direction: column;
