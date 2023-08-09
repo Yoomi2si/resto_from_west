@@ -120,6 +120,9 @@ h3 {
   text-shadow: 3px 3px 3px black;
   letter-spacing: 2px;
 }
+#imagePrincipale h3 {
+  line-height: 65px;
+}
 
 /* ********************Prestation***************************** */
 #presentation {

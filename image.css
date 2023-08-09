@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Dancing+Script&family=Poppins:wght@100&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Advent Pro", "Dancing Script", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* ****************************NAV**************************** */
+nav {
+  overflow: hidden;
+  background-color: #fffae1;
+  width: 100%;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
+#menuBurger {
+  display: none;
+  cursor: pointer;
+  font-size: calc(0.5rem + 1.1vw);
+}
+
+#menuBurger:hover {
+  transform: scale(1.5);
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+#navBar {
+  margin: 0 15px 0 0;
+}
+
+nav li {
+  float: right;
+  /* font-size: calc(0.5rem + 1.1vw); */
+}
+
+nav li a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 18px 16px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: calc(0.5rem + 1.1vw);
+}
+
+nav li a:hover,
+#logo:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+  text-shadow: 5px 5px 2px black;
+  font-weight: bold;
+}
+
+#logo {
+  font-family: "Dancing Script", cursive;
+  font-size: calc(0.5rem + 0.6vw);
+  font-weight: bold;
+  float: left;
+  margin-left: 20px;
+  margin-top: 6px;
+}
+
+/* **************************presentation********************* */
+.entete {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.text {
+  position: absolute;
+  z-index: 2;
+  top: 350px;
+  left: 50px;
+}
+
+.photo_slider {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  /* background: url(../../site_resto_2/medias/img1.jpg);
+  background-size: cover; */
+  animation: zoom_out 25s infinite;
+}
+
+@keyframes zoom_out {
+  0% {
+    background: url(medias/img1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    width: 120%;
+  }
+  20% {
+    background: url(medias/img11.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    width: 120%;
+  }
+  40% {
+    background: url(medias/img12..jpg) no-repeat 50% 50%;
+    background-size: cover;
+    width: 100%;
+  }
+  60% {
+    background: url(medias/img13..jpg) no-repeat 50% 50%;
+    background-size: cover;
+    width: 120%;
+  }
+  80% {
+    background: url(medias/img14..jpg) no-repeat 50% 50%;
+    background-size: cover;
+    width: 100%;
+  }
+  100% {
+    background: url(medias/img1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    width: 120%;
+  }
+}
