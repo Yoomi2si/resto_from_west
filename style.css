@@ -75,7 +75,7 @@ nav li a {
 nav li a:hover,
 #logo:hover {
   transform: scale(1.2);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   text-shadow: 5px 5px 2px black;
   font-weight: bold;
 }

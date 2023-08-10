@@ -69,9 +69,13 @@ nav li a {
 nav li a:hover,
 #logo:hover {
   transform: scale(1.2);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   text-shadow: 5px 5px 2px black;
   font-weight: bold;
+}
+
+nav ul li .fa-regular {
+  display: none;
 }
 
 #logo {
@@ -105,6 +109,10 @@ nav li a:hover,
   height: 100vh;
   width: 100%;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
   /* background: url(../../site_resto_2/medias/img1.jpg);
   background-size: cover; */
   animation: zoom_out 25s infinite;
@@ -112,33 +120,151 @@ nav li a:hover,
 
 @keyframes zoom_out {
   0% {
-    background: url(medias/img1.jpg) no-repeat 50% 50%;
+    background: url(medias/img1..jpg) no-repeat 50% 50%;
     background-size: cover;
-    width: 120%;
+    width: 100%;
   }
   20% {
-    background: url(medias/img11.jpg) no-repeat 50% 50%;
+    background: url(medias/img4..jpg) no-repeat 50% 50%;
     background-size: cover;
-    width: 120%;
+    width: 100%;
   }
   40% {
-    background: url(medias/img12..jpg) no-repeat 50% 50%;
+    background: url(medias/img11..jpg) no-repeat 50% 50%;
     background-size: cover;
     width: 100%;
   }
   60% {
-    background: url(medias/img13..jpg) no-repeat 50% 50%;
+    background: url(medias/img7..jpg) no-repeat 50% 50%;
     background-size: cover;
-    width: 120%;
+    width: 100%;
   }
   80% {
-    background: url(medias/img14..jpg) no-repeat 50% 50%;
+    background: url(medias/img3..jpg) no-repeat 50% 50%;
     background-size: cover;
     width: 100%;
   }
   100% {
-    background: url(medias/img1.jpg) no-repeat 50% 50%;
+    background: url(medias/img1..jpg) no-repeat 50% 50%;
     background-size: cover;
-    width: 120%;
+    width: 100%;
+  }
+}
+
+/* ********************footer**************************** */
+footer {
+  background-color: #524a3a;
+  color: #fffae1;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+
+#copyRightIcons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 10%;
+}
+
+#copyRight {
+  width: 50%;
+  text-align: left;
+  color: #fffae1;
+  font-size: calc(0.5rem + 1.1vw);
+  letter-spacing: 1px;
+}
+
+#icons {
+  width: 50%;
+  text-align: right;
+}
+
+#icons a {
+  display: inline-block;
+  padding: 0 10px;
+  color: #fffae1;
+  font-size: calc(0.5rem + 1.1vw);
+}
+#icons a:hover {
+  transform: scale(1.5);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ************************responsive******************************* */
+@media screen and (max-width: 550px) {
+  #menuBurger {
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 20px;
+    font-size: calc(1.2rem + 1vw);
+  }
+  #menuBurger::before {
+    content: "\2630";
+  }
+
+  /* .active #menuBurger::before {
+    content: "\2715";
+  } */
+
+  #logo {
+    margin-left: 15px;
+  }
+
+  #navBar {
+    position: fixed;
+    margin-left: -100%;
+    background: rgb(27, 26, 26);
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    /* backdrop-filter: blur(2px); */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 1s ease;
+    font-weight: bold;
+  }
+
+  nav li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: calc(2rem + 2vw);
+    color: white;
+  }
+
+  nav ul li .fa-regular {
+    display: block;
+  }
+
+  #navBar.active {
+    margin-left: 0;
+  }
+
+  #imagePrincipale h3 {
+    line-height: 55px;
+  }
+
+  #copyRightIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  #copyRight {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  #icons {
+    text-align: center;
+    width: 100%;
   }
 }

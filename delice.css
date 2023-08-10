@@ -27,7 +27,7 @@ h3 {
 
 h2,
 h5 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Advent Pro", sans-serif;
 }
 
 h5 {
@@ -48,7 +48,7 @@ h2 {
   letter-spacing: 2px;
   font-size: calc(2.5rem + 3vw);
   text-shadow: 5px 5px 3px black;
-  color: rgb(255, 145, 0);
+  color: rgb(221, 125, 0);
   font-weight: 900;
 }
 /* h2:hover {
@@ -57,7 +57,7 @@ h2 {
 } */
 
 h3 {
-  color: antiquewhite;
+  /* color: antiquewhite; */
   font-size: calc(1rem + 2vw);
   text-shadow: 3px 3px 3px black;
   letter-spacing: 2px;
@@ -106,7 +106,7 @@ nav li a {
 nav li a:hover,
 #logo:hover {
   transform: scale(1.2);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   text-shadow: 5px 5px 2px black;
   font-weight: bold;
 }
